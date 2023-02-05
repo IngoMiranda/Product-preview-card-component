@@ -1,0 +1,48 @@
+/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;      
+
+}
+
+.attribution {
+
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+
+ color: hsl(228, 45%, 44%);
+
+}
+
+:root{
+    --dark-cyan:hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-graish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-title:'Fraunces', serif;
+}
+
+/*
+    - Mobile: 375px
+    - Desktop: 1440px
+
+*/
+
+
+/*Mobile: size card 375px*/
+
+body{
+
+    width: 100vw;
+    height: 100vh;
+    background: var(--cream);
+}
