@@ -29,8 +29,8 @@
     --white: hsl(0, 0%, 100%);
 
     --font-title:'Fraunces', serif;
+    
 }
-
 /*
     - Mobile: 375px
     - Desktop: 1440px
@@ -43,6 +43,107 @@
 body{
 
     width: 100vw;
-    height: 100vh;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
     background: var(--cream);
+}
+
+.card{
+    width: 95vw;
+    height: auto;
+    border-radius: 1rem;
+    background: var(--white);
+}
+
+.img img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0 ;
+       
+}
+
+.text-card{
+    width: 100%;
+    padding: .8rem;
+    gap: .8rem;
+    
+}
+
+.infor{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+
+}
+
+.infor span{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: .6rem;
+}
+
+.infor h1{
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family:var(--font-title) ;
+}
+
+.infor p{
+    width: auto;
+    font-size: .8rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    color: var(--dark-graish-blue);
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin: 1.4rem auto;
+    gap: .4rem;
+}
+.price .pr{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 114%;
+    color: var(--dark-cyan);
+
+    
+}
+
+.price :nth-child(2n){
+
+    text-decoration: line-through;
+
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+    gap: .2rem;
+    margin-top: .6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    border-radius: .5rem;
+    color: var(--white);
+    background: var(--dark-cyan);
+}
+
+button > ion-icon{
+    text-align:center;
+    padding: .2rem;
+    font-size:1rem;
+    font-weight: 400;
+    color: var(--white);
 }
