@@ -53,21 +53,30 @@ body{
 }
 
 .card{
-    width: 95vw;
+    width: 93vw;
     height: auto;
+    margin: 1rem;
     border-radius: 1rem;
     background: var(--white);
 }
 
-.img img {
+/* .img img {
     width: 100%;
     border-radius: 1rem 1rem 0 0 ;
+       
+} */
+
+.img{
+    width: 100%;
+    height: 225px;
+    background: url(./images/image-product-mobile.jpg) no-repeat center /cover;
+    border-radius: 1rem 1rem 0 0 ; 
        
 }
 
 .text-card{
     width: 100%;
-    padding: .8rem;
+    padding: .9rem;
     gap: .8rem;
     
 }
@@ -137,7 +146,12 @@ button{
     border: none;
     border-radius: .5rem;
     color: var(--white);
+    cursor: pointer;
     background: var(--dark-cyan);
+}
+
+button:hover{
+    background: var(--very-dark-blue);
 }
 
 button > ion-icon{
@@ -146,4 +160,45 @@ button > ion-icon{
     font-size:1rem;
     font-weight: 400;
     color: var(--white);
+}
+
+/*- Desktop: 1440px*/
+
+@media (min-width: 600px){
+
+    .card{
+        display: flex;
+        width: 70vw;
+        height: auto;
+        
+        border-radius: 1rem;
+        background: var(--white);
+    }
+    .img{
+        width: 100%;
+        height: auto;
+        background: url(./images/image-product-desktop.jpg) no-repeat center /cover;
+        border-radius: 1rem 0 0 1rem ; 
+           
+    }
+}
+
+@media (min-width: 1200px){
+
+    .card{
+        display: flex;
+        width: 35vw;
+        height: auto;
+        
+        border-radius: 1rem;
+        background: var(--white);
+    }
+    .img{
+        width: 100%;
+        height: auto;
+        background: url(./images/image-product-desktop.jpg) no-repeat center /cover;
+        border-radius: 1rem 0 0 1rem ; 
+           
+    }
+
 }
