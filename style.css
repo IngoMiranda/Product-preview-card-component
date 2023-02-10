@@ -168,7 +168,7 @@ button > ion-icon{
 
     .card{
         display: flex;
-        width: 70vw;
+        width: 75vw;
         height: auto;
         
         border-radius: 1rem;
@@ -183,12 +183,12 @@ button > ion-icon{
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 900px){
 
     .card{
         display: flex;
-        width: 35vw;
-        height: auto;
+        width: 65vw;
+        height: 566px;
         
         border-radius: 1rem;
         background: var(--white);
@@ -200,5 +200,5 @@ button > ion-icon{
         border-radius: 1rem 0 0 1rem ; 
            
     }
-
 }
+
